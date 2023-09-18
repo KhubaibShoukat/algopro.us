@@ -1,0 +1,13 @@
+<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="linktree">
+<path id="Vector" d="M8.42444 10.6946H10.8895L9.136 9.03008L10.1017 8.03262L11.7726 9.74799V7.30835H13.2211V9.74799L14.892 8.03897L15.8577 9.03008L14.1106 10.6946H16.5756V12.0733H14.0979L15.8577 13.7823L14.892 14.7543L12.4969 12.3528L10.1017 14.7543L9.136 13.7887L10.8958 12.0796H8.42444V10.701V10.6946ZM11.7726 14.0428H13.2211V17.3083H11.7726V14.0428Z" fill="white"/>
+<rect x="1" y="0.808594" width="23" height="22.9996" rx="11.4998" stroke="url(#paint0_linear_73_591)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_73_591" x1="12.5" y1="28.8928" x2="12.5" y2="-3.89089" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EDEDEE"/>
+<stop offset="0.494792" stop-color="#181C24"/>
+<stop offset="1" stop-color="#EDEDEE"/>
+</linearGradient>
+</defs>
+</svg>

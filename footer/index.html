@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				background: black;
+			}
+			.footer_container {
+				padding: 50px 20px;
+				background: rgba(0, 59, 250, 0.5);
+				background: url(footer_bg.png);
+				background-position: right;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 100%;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.footer__wrapper {
+				display: flex;
+				max-width: 1040px;
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+
+				gap: 29px;
+			}
+			.footer__content_box {
+				border-bottom: 1px solid #fff;
+				display: flex;
+				padding: 0px 32px 30px 32px;
+				justify-content: space-between;
+				align-items: flex-start;
+				align-self: stretch;
+			}
+			.content_box-left {
+				display: flex;
+				max-width: 239px;
+				width: 100%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 20px;
+			}
+			.content_box-subheading {
+				color: #fff;
+
+				/* regular/body2-regular */
+				font-family: Poppins;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+			.content_box-right {
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 50px;
+			}
+			.company__menu {
+				display: flex;
+				max-width: 166px;
+				width: 100%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 20px;
+			}
+			.menu__heading {
+				color: #68eafc;
+
+				/* bold/body1-bold */
+				font-family: Poppins;
+				font-size: 18px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: 24px; /* 133.333% */
+				padding: 0px 10px;
+			}
+			.menu__subheading {
+				display: flex;
+				padding: 0px 10px;
+				align-items: center;
+				gap: 10px;
+				align-self: stretch;
+				color: #fff;
+				text-align: center;
+
+				/* regular/body2-regular */
+				font-family: Poppins;
+				font-size: 16px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+				text-decoration: none;
+			}
+			.contact__menu {
+				display: flex;
+				min-width: 221px;
+				width: 100%;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-start;
+				gap: 20px;
+			}
+			.menu__icon-links {
+				display: flex;
+
+				align-items: center;
+				padding: 5px 0;
+				gap: 5px;
+			}
+			.menu_icon {
+				width: 25px;
+				height: 25px;
+			}
+			.footer_social_privacy {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				gap: 30px;
+				align-self: stretch;
+			}
+			.footer_social_privacy--links {
+				display: flex;
+				align-items: center;
+				gap: 38px;
+			}
+			.footer_copyright {
+				display: flex;
+				padding-bottom: 10px;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 10px;
+			}
+			.copywright__text {
+				color: #fff;
+
+				/* regular/caption2-regular */
+				font-family: Poppins;
+				font-size: 13px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: normal;
+			}
+			@media (max-width: 800px) {
+				.footer__content_box {
+					flex-direction: column;
+					gap: 50px;
+					padding: 0;
+					padding-bottom: 20px;
+				}
+				.footer_container {
+					padding: 25px;
+				}
+				.content_box-left {
+					max-width: 100%;
+				}
+				.content_box-right {
+					gap: 20px;
+				}
+				.company__menu {
+					max-width: 100%;
+				}
+				.contact__menu {
+					min-width: fit-content;
+				}
+				.footer_social_privacy--links {
+					gap: 22px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="footer_container">
+			<div class="footer__wrapper">
+				<div class="footer__content_box">
+					<div class="content_box-left">
+						<div class="content_box-logo">
+							<img src="algopro-white.png" alt="" />
+						</div>
+						<div class="content_box-text">
+							<p class="content_box-subheading">
+								Bringing people into the world of automated trading one trade at
+								a time
+							</p>
+						</div>
+					</div>
+
+					<div class="content_box-right">
+						<div class="company__menu">
+							<div class="menu__header">
+								<h2 class="menu__heading">Company</h2>
+							</div>
+							<div class="menu__content">
+								<a class="menu__subheading">Our Academy</a>
+								<a class="menu__subheading">Start Now</a>
+							</div>
+						</div>
+						<div class="contact__menu">
+							<div class="menu__header">
+								<h2 class="menu__heading">Contact Us</h2>
+							</div>
+							<div class="menu__content">
+								<div class="menu__icon-links">
+									<img src="building.png" alt="" class="menu_icon" />
+									<a class="menu__subheading">London, UK</a>
+								</div>
+								<div class="menu__icon-links">
+									<img src="whatsapp.png" alt="" class="menu_icon" />
+									<a class="menu__subheading">+44 7534292370</a>
+								</div>
+								<div class="menu__icon-links">
+									<img src="mail.png" alt="" class="menu_icon" />
+									<a class="menu__subheading">info@algopro.ai</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer_social_privacy">
+					<div class="footer_social_privacy--links">
+						<a href=""
+							><img src="discord-2.svg" alt="" class="footer_socail_links" />
+						</a>
+						<a href=""
+							><img src="linkedin.svg" alt="" class="footer_socail_links" />
+						</a>
+						<a href=""
+							><img src="linktree.svg" alt="" class="footer_socail_links" />
+						</a>
+						<a href=""
+							><img src="instagram.svg" alt="" class="footer_socail_links" />
+						</a>
+						<a href=""
+							><img src="trustpilot.svg" alt="" class="footer_socail_links"
+						/></a>
+						<a href=""
+							><img src="twitter.svg" alt="" class="footer_socail_links" />
+						</a>
+					</div>
+					<div class="footer_copyright">
+						<p class="copywright__text">
+							© Copyright 2023. All Rights Reserved. AlgoPro
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
