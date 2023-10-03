@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .ty_ask-container {
+            max-width: 1440px;
+            width: 100%;
+            height: 488px;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .ty_ask_bg_grad {
+            background: linear-gradient(282deg, #68EAFC -5.27%, #003BFA 92.53%);
+            filter: blur(100px);
+            max-width: 931.119px;
+            width: 100%;
+            height: 216.369px;
+            flex-shrink: 0;
+            position: absolute;
+        }
+
+        .ty_ask_content {
+            display: flex;
+            max-width: 521px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            z-index: 1;
+        }
+
+        .ty_ask_heading {
+            color: var(--primary-p-1, #FFF);
+            text-align: center;
+            font-family: Inter;
+            font-size: 62px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 67.4px;
+            /* 108.71% */
+            letter-spacing: -3px;
+            align-self: stretch;
+        }
+
+        .ty_ask_subheading {
+            align-self: stretch;
+            color: #FFF;
+            text-align: center;
+
+            /* Body/body1 */
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            /* 138.889% */
+        }
+
+        .ty_ask_btn {
+            border-radius: 100px;
+            background: #FFF;
+            display: flex;
+            padding: 8px 35px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .ty_ask_link_text {
+            color: #003BFA;
+            font-family: Inter;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            text-decoration-line: underline;
+        }
+        @media only screen and (max-width: 600px) {
+            .ty_ask-container{
+                padding: 0 30px;
+                height: 380px;
+            }
+            .ty_ask_bg_grad{
+                height: 130px;
+                width:70%;
+                filter: blur(70px);
+            }
+            .ty_ask_heading{
+                font-size: 42px;
+                line-height: 48px;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="ty_ask-container">
+        <div class="ty_ask_bg_grad"></div>
+        <div class="ty_ask_content">
+            <p class="ty_ask_heading">Any Questions?</p>
+            <p class="ty_ask_subheading">
+                If you have any questions or need assistance, don't hesitate to reach out.
+                We're here to help.
+            </p>
+            <a class="ty_ask_btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                    <path
+                        d="M9.33329 31.1666C8.59996 31.1666 7.9724 30.9057 7.45063 30.3839C6.92796 29.8613 6.66663 29.2333 6.66663 28.4999V12.4999C6.66663 11.7666 6.92796 11.139 7.45063 10.6173C7.9724 10.0946 8.59996 9.83325 9.33329 9.83325H30.6666C31.4 9.83325 32.028 10.0946 32.5506 10.6173C33.0724 11.139 33.3333 11.7666 33.3333 12.4999V28.4999C33.3333 29.2333 33.0724 29.8613 32.5506 30.3839C32.028 30.9057 31.4 31.1666 30.6666 31.1666H9.33329ZM20 21.8333L30.6666 15.1666V12.4999L20 19.1666L9.33329 12.4999V15.1666L20 21.8333Z"
+                        fill="#003BFA" />
+                </svg>
+                <span class="ty_ask_link_text">
+                    info@algopro.ai
+                </span>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

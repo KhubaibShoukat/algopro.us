@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .ty_hero_container {
+            max-width: 1440px;
+            width: 100%;
+            padding-top: 170px;
+            background: url('./bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ty_hero_content_area {
+            display: flex;
+            max-width: 1040px;
+            width: 100%;
+            padding: 0px 50px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+
+        .hero_content_heading {
+            color: #FFF;
+            text-align: center;
+
+            /* Desktop/h1-Desk */
+            font-family: Inter;
+            font-size: 62px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 67.4px;
+            /* 108.71% */
+            letter-spacing: -3px;
+            align-self: stretch;
+        }
+
+        .heading_big {
+            background: linear-gradient(308deg, #2800FD 3.98%, #0ACAFF 65.13%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-family: Inter;
+            font-size: 62px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 67.4px;
+            letter-spacing: -3px;
+        }
+
+        .hero_content_subheading {
+            align-self: stretch;
+            color: #FFF;
+            text-align: center;
+
+            /* Body/body1 */
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            /* 138.889% */
+        }
+
+        .ty_hero_image_area {
+            max-width: 1440px;
+            width: 100%;
+            height: 534px;
+            flex-shrink: 0;
+            margin-top: -70px;
+        }
+
+        .hero_image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .ty_hero_container {
+                padding-top: 80px;  
+                background-position: top right;
+            }
+            .ty_hero_content_area {
+                padding: 0 30px;
+                gap: 16px;
+            }
+            .hero_content_heading{
+                font-size: 42px;
+                line-height: 57.4px;
+                margin-bottom: 10px;
+            }
+            .heading_big{
+                font-size: 42px;
+                line-height: 57.4px;
+                padding-top  : 20px;
+            }
+            .ty_hero_image_area{
+                height: 190px;
+                margin-top: 0;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="ty_hero_container">
+        <div class="ty_hero_content_area">
+            <p class="hero_content_heading">Thank you for your purchase and
+                <span class="heading_big">WELCOME TO ALGOPRO! </span>
+            </p>
+            <p class="hero_content_subheading">Congratulations on taking the first step towards your educational journey
+                with us!</p>
+        </div>
+
+        <div class="ty_hero_image_area">
+            <img src="./hero_image.png" alt="" class="hero_image">
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -19,13 +19,26 @@
 
                 align-self: stretch;   
                 display: flex;         
-                padding: 250px 200px 50px 200px; 
-                background: url(hero__section.png);
+                justify-content: center;
+                align-items: center;
+                padding: 250px 100px 50px 100px; 
+                background: url('https://cdn.fs.teachablecdn.com/AQREDrEsRkiUUzSIrw4j');
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 overflow-y: hidden;
             }
+
+            .hero_section--wrapper{
+                display: flex;     
+                flex-direction: column;    
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                max-width: 1040px;
+
+            }
+
             .hero_section-content{
                 display: flex;
                 flex-direction: column;
@@ -118,8 +131,9 @@ margin-top: 90px;
 <body>
     <div class="hero_section--container">
 
-
-        <div class="hero_section-content">
+        <div class="hero_section--wrapper">
+       
+            <div class="hero_section-content">
 
             <h1 class="hero__section--heading">MetaTrader5</h1>
             <p class="hero__section--svgheading">
@@ -149,14 +163,16 @@ margin-top: 90px;
                     </defs>
                   </svg>
             </p>
-            <p class="hero__section--text">Become an algorithmic trader and learn to build bots using <strong> MetaTrader5</strong></p>
+            <p class="hero__section--text">Become an algorithmic trader and learn to build bots using 
+                <strong>MetaTrader5</strong></p>
             <a href="#" class="hero_section--btn">Join Waiting List</a>
-            <p class="hero__section--subtext">With MetaTrader5 now leading the way, at AlgoPro we teach you how to code, build, and deploy your own trading bots all within the application. Boost your career today, going from zero to algo trader, with no previous experience required.</p>
+            <p class="hero__section--subtext">With MetaTrader5 now leading the way, at AlgoPro we teach you how to code, build, and deploy your own trading bots all within the application. Boost your career today, going from zero to algo trader, with no previous experience required.
         </div>
 
 
 
         <div class="hero_section-image" style="margin: auto;"><img src="left_image.png" alt=""></div>
+    </div>
     </div>
 </body>
 </html>

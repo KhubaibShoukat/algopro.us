@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .ty_image_with_text {
+            display: flex;
+            max-width: 1440px;
+            width: 100%;
+            height: 663px;
+            align-items: center;
+            justify-content: center;
+            gap: 32px;
+            background: #000;
+        }
+
+        .ty_image_with_text_wrapper {
+            display: flex;
+            max-width: 1040px;
+            width: 100%;
+            height: 663px;
+            align-items: center;
+            gap: 32px;
+            flex-wrap: wrap;
+        }
+
+        .ty_iwt_text-area {
+            display: flex;
+            padding-top: 56px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            flex: 1 0 0;
+        }
+
+        .iwt_text_content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            align-self: stretch;
+        }
+
+        .iwt_heading {
+            align-self: stretch;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 57.2px;
+            /* 143% */
+        }
+
+        .iwt_heading-big {
+
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 57.2px;
+        }
+
+        .iwt_subheading {
+            align-self: stretch;
+            color: #FFF;
+
+            /* Body/body1 */
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            /* 138.889% */
+        }
+
+        .iwt_button_content {
+            display: flex;
+            align-items: flex-end;
+            gap: 24px;
+            height: 64px
+        }
+
+        .iwt_button_content a {
+            border-radius: 100px;
+            background: linear-gradient(0deg, #2800FD 0%, #0ACAFF 78.65%);
+            display: flex;
+            height: 40px;
+            padding: 15px 35px;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+
+            color: #FFF;
+            text-align: center;
+
+            /* Body/body1-semibold */
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+            /* 138.889% */
+
+        }
+
+        .ty_iwt_image_section {
+            flex: 1 0 0;
+            align-self: stretch;
+            padding: 52px 55px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: relative;
+
+        }
+
+        .ty_iwt_bg_gradient {
+            position: absolute;
+            opacity: 0.75;
+
+            /* blur-bg */
+            filter: blur(100px);
+            display: flex;
+            max-width: 504px;
+            width: 100%;
+            min-height: 519px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 543.748px;
+            background: radial-gradient(92.08% 82.46% at 28.9% 51.99%, #92FFFF 0%, rgba(132, 85, 169, 0.00) 100%), radial-gradient(39.3% 24.44% at 72.7% 66.59%, #2800FD 0%, #003BFA 100%);
+            backdrop-filter: blur(1px);
+        }
+
+        .iwt_image {
+            object-fit: cover;
+            z-index: 1;
+        }
+
+
+        @media only screen and (max-width: 600px) {
+
+            .ty_image_with_text_wrapper{
+                flex-direction: column-reverse;
+                flex-wrap: nowrap;
+                padding: 70px 30px;
+            }
+            .ty_image_with_text_wrapper,.ty_image_with_text {
+                height: fit-content;
+                max-height: fit-content;
+                width: 100%;
+                max-width: 100%;
+            }
+            .ty_iwt_image_section{
+                padding: 0;
+            }
+            .iwt_image{
+                width: 100%;
+                height: 100%;
+            }
+            .ty_iwt_text-area{
+                width: 100%;
+                gap: 14px;
+                padding-top: 36px;
+            }
+            .ty_iwt_bg_gradient{
+                max-width: 250px;
+                min-height:300px
+            }
+            .iwt_heading-big,.iwt_heading{
+                font-size: 38px;
+                line-height: 47px;
+            }
+            .iwt_text_content {
+                gap: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ty_image_with_text">
+        <div class="ty_image_with_text_wrapper">
+            <div class="ty_iwt_text-area">
+                <div class="iwt_text_content">
+                    <p class="iwt_heading">Join our exclusive Discord server for
+                        <span class="iwt_heading-big">MEMBERS-ONLY</span>
+                    </p>
+
+                    <p class="iwt_subheading">Accelerate your learning by joining our exclusive community! <br /><br />
+                        Surround yourself with coders and traders on the same mission as you. </p>
+                </div>
+                <div class="iwt_button_content">
+                    <a href=""> Join Our Discord</a>
+                </div>
+            </div>
+            <div class="ty_iwt_image_section">
+                <div class="ty_iwt_bg_gradient"></div>
+                <img src="./image.png" alt="" class="iwt_image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
