@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" />
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .ps_container {
+            display: flex;
+            max-width: 1440px;
+            width: 100%;
+            min-height: 735px;
+            padding: 38px 100px;
+            justify-content: center;
+            align-items: center;
+            background: #0D0D0D;
+            transition: all 0.3s ease;
+        }
+
+        .ps_container_wrapper {
+            display: flex;
+            max-width: 1240px;
+        
+            min-height: 659px;
+            padding: 16px 32px;
+            justify-content: center;
+            align-items: center;
+            gap: 32px;
+            flex-shrink: 0;
+        }
+
+        .ps_left_card_wrapper {
+            display: flex;
+            height: 586px;
+            max-width: 486px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex: 1 0 0;
+        }
+
+        .ps_left_card {
+            border-radius: 20px;
+            border: 2px solid #181C24;
+            background: linear-gradient(296deg, #2800FD -0.81%, #0ACAFF 106.24%);
+            display: flex;
+            padding: 30px;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            flex: 1 0 0;
+            align-self: stretch;
+        }
+
+        .left_card_content_box {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 16px;
+            align-self: stretch;
+        }
+
+        .left_card_heading {
+            color: #FFF;
+
+            /* mob/H2-regular-mob */
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            align-self: stretch;
+        }
+
+        .left_card_heading-big {
+            color: #FFF;
+
+            /* mob/H2-bold-mob */
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .left_card_subheading {
+            color: #FFF;
+
+            /* regular/Body3-regular */
+            font-family: Poppins;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+
+        .Left_card_image_box {
+            display: flex;
+            width: 260px;
+            height: 203px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ps_right_cards_wrapper {
+            display: flex;
+            max-width: 718px;
+            width: 100%;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-start;
+            gap: 32px;
+            flex-shrink: 0;
+        }
+
+        .ps_right_content_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            align-self: stretch;
+        }
+
+        .right_content_box_heading {
+            color: #FFF;
+
+            /* desk/H3-regular-desk */
+            font-family: Montserrat;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            max-width: 340px;
+            width: 100%;
+        }
+
+        .right_content_box_subheading {
+            max-width: 340px;
+            width: 100%;
+            color: var(--primary-p-1, #FFF);
+            text-align: right;
+
+            /* desk/H4-regular-desk */
+            font-family: Montserrat;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .right_content_box_subheading-big {
+            color: #68EAFC;
+
+            /* desk/H5-bold-desk */
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .ps_right_cards_box {
+            display: flex;
+            align-items: flex-start;
+            gap: 32px;
+            align-self: stretch;
+            
+        }
+
+        .ps_right_card_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            flex: 1 0 0;
+            align-self: stretch;
+        }
+
+        .ps_right_card {
+            display: flex;
+            padding: 24px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            align-self: stretch;
+            border-radius: 16px;
+            border: 2px solid #fff;
+            background: linear-gradient(90deg, #141922 0%, #17212D 72.82%);
+        }
+
+        .ps_right_card_bottom-text {
+            align-self: stretch;
+            color: #68EAFC;
+            text-align: center;
+
+            /* regular/caption1-regular */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .ps_right_card_wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 25px;
+            align-self: stretch;
+        }
+
+        .ps_right_card_inner_heading_box {
+            display: flex;
+            align-items: flex-end;
+            gap: 16px;
+            align-self: stretch;
+        }
+
+        .ps_right_card_inner_heading {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+        }
+
+        .ps_right_card_heading_inner {
+            color: #FFF;
+
+            /* desk/H4-bold-desk */
+            font-family: Montserrat;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        .ps_right_card-seprator {
+            background: #FFF;
+            width: 56.871px;
+            height: 2px;
+        }
+
+        .ps_right_card-plans_wrapper {
+
+            padding: 16px 0px 8px 0px;
+
+        }
+
+        .ps_rufht_card-lists_container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            align-self: stretch;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .ps_right_card_read-btn_wrapper {
+            border-radius: 4px;
+            display: flex;
+            padding: 8px 0px;
+            align-items: flex-start;
+            gap: 5px;
+            align-self: stretch;
+            cursor: pointer;
+        }
+        .ps_right_card_readMore_btn{
+            color: #FFF;
+            /* regular/caption1-regular */
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .ps_right_card_package_lists-wrapper{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            align-self: stretch;
+            display: none;
+            height: 0;
+            transition: all 0.3s ease-in-out;
+        }
+.packge_list-item{
+    display: flex;
+align-items: flex-start;
+gap: 5px;
+align-self: stretch;
+}
+.package_list_item-text{
+    flex: 1 0 0;
+    color:  #FFF;
+
+/* regular/caption1-regular */
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.package_list_item-check{display: flex;
+width: 25px;
+height: 25px;
+padding: 5px;
+justify-content: center;
+align-items: center;
+gap: 10px;}
+.right_card_buy_btn-wrapper{
+    display: flex;
+padding-top: 8px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+}
+.ps_right_card_but_btn{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+align-self: stretch;
+border-radius: 100px;
+border: 1px solid  #FFF;
+padding: 10px 30px;
+color: #FFF;
+text-align: center;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-decoration: none;
+transition: all 0.1s ease-in;
+}
+.ps_right_card-active{
+    border-radius: 16px;
+border: 2px solid var(--gradients-gradient-4, #181C24);
+background: linear-gradient(292deg, #2800FD 14.12%, #0ACAFF 101.2%);
+}
+
+.ps_right_card_but_btn:hover ,.ps_right_card_but_btn-active{
+    font-size: 15px;
+font-style: normal;
+font-weight: 700;
+background:  #68EAFC;
+color:  #003BFA;
+border-color: #68EAFC;
+}
+@media (max-width: 1050px) {
+    .ps_container_wrapper{
+        flex-direction: column;
+    }
+    .ps_right_cards_box{
+        flex-direction: column;
+    }
+    .ps_left_card_wrapper{
+        max-width: 350px;
+        height: auto;
+    }
+    .ps_right_content_box{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    .right_content_box_heading,.right_content_box_subheading{
+        text-align: center;
+    }
+    .right_content_box_heading{
+        font-size: 32px;
+    }
+    .right_content_box_subheading-big,.right_content_box_subheading{
+        font-size: 22px;
+    }
+    .ps_container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .ps_right_card-plans_img{
+        width: 100%;
+    }
+    .left_card_heading-big,.left_card_heading,.ps_right_card_heading_inner{
+        font-size: 28px;
+    }
+    .left_card_subh{
+        text-align: center;
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="ps_container">
+        <div class="ps_container_wrapper">
+            <div class="ps_left_card_wrapper">
+                <div class="ps_left_card">
+                    <div class="left_card_content_box">
+                        <p class="left_card_heading">Boost your career <span class="left_card_heading-big">now</span>
+                        </p>
+                        <p class="left_card_subheading">Unleash your full potential as a manual and automated trader
+                            with the skills that funds, institutions and banks are all desperate for. Our exclusive
+                            packages provide you with everything you need and more to boost your trading game to all-new
+                            heights. Don't miss out on this opportunity to take your trading skills to the next level
+                            and secure your financial future - join us today!</p>
+                    </div>
+                    <div class="Left_card_image_box"><img src="./bg-cryptocurrency.png" alt="" class="left_card_img">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ps_right_cards_wrapper">
+
+                <div class="ps_right_content_box">
+                    <p class="right_content_box_heading">
+                        What you get
+                    </p>
+                    <p class="right_content_box_subheading">
+                        Need a bot built? <br /> <span class="right_content_box_subheading-big">Contact us</span>
+                    </p>
+                </div>
+                <div class="ps_right_cards_box">
+                    <div class="ps_right_card_box">
+                        <div class="ps_right_card">
+                            <div class="ps_right_card_wrapper">
+
+                                <div class="ps_right_card_inner_heading_box">
+                                    <div class="ps_right_card_img-box"><img src="./card_logo.png" alt=""></div>
+                                    <div class="ps_right_card_inner_heading">
+                                        <p class="ps_right_card_heading_inner">
+                                            MetaTrader4
+                                        </p>
+                                        <div class="ps_right_card-seprator"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="ps_right_card-plans_wrapper">
+                                    <img src="./mt4_plan.png" alt="" class="ps_right_card-plans_img">
+                                </div>
+                                <div class="ps_rufht_card-lists_container">
+
+                                    <div class="ps_right_card_read-btn_wrapper" id="dark_card_btn">
+                                        <svg id="light_svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M7.64085 8.35535L12.0057 13.0691L16.3705 8.35535C16.8093 7.88155 17.518 7.88155 17.9567 8.35535C18.3955 8.82916 18.3955 9.59453 17.9567 10.0683L12.7932 15.6446C12.3544 16.1185 11.6457 16.1185 11.207 15.6446L6.04341 10.0683C5.60467 9.59453 5.60467 8.82916 6.04341 8.35535C6.48214 7.8937 7.20212 7.88155 7.64085 8.35535Z" fill="white"/>
+                                        </svg>
+                                        <button class="ps_right_card_readMore_btn">
+                                            More detail
+                                        </button>
+                                    </div>
+
+                                    <div class="ps_right_card_package_lists-wrapper" id="dark_card_lists">
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                MT4/MQL4 crash course.
+                                            </p>
+                                        </div>
+
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Python: thrown in the deep end.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Build your first trading bot.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Programming with Indicators.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Connect to Binance using python.course.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Auto-compounding tools.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Automating risk management.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Full library of MQL4 code.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                High frequency trading.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Full access to our MT4 strategies.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Community of quants.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Lifetime membership.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="right_card_buy_btn-wrapper">
+                                    <a href="" class="ps_right_card_but_btn">1,750 GBP</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps_right_card_bottom-text">
+                            No previous <br /> experience necessary
+                        </div>
+                    </div>
+
+                    <div class="ps_right_card_box">
+                        <div class="ps_right_card ps_right_card-active">
+                            <div class="ps_right_card_wrapper">
+
+                                <div class="ps_right_card_inner_heading_box">
+                                    <div class="ps_right_card_img-box"><img src="./card_logo.png" alt=""></div>
+                                    <div class="ps_right_card_inner_heading">
+                                        <p class="ps_right_card_heading_inner">
+                                            MetaTrader4
+                                        </p>
+                                        <div class="ps_right_card-seprator"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="ps_right_card-plans_wrapper">
+                                    <img src="./mt5_plan.png" alt="" class="ps_right_card-plans_img">
+                                </div>
+                                <div class="ps_rufht_card-lists_container">
+
+                                    <div class="ps_right_card_read-btn_wrapper" id="light_card_btn">
+                                        <svg id="light" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M7.64085 8.35535L12.0057 13.0691L16.3705 8.35535C16.8093 7.88155 17.518 7.88155 17.9567 8.35535C18.3955 8.82916 18.3955 9.59453 17.9567 10.0683L12.7932 15.6446C12.3544 16.1185 11.6457 16.1185 11.207 15.6446L6.04341 10.0683C5.60467 9.59453 5.60467 8.82916 6.04341 8.35535C6.48214 7.8937 7.20212 7.88155 7.64085 8.35535Z" fill="white"/>
+                                        </svg>
+                                        <button class="ps_right_card_readMore_btn">
+                                            More detail
+                                        </button>
+                                    </div>
+
+                                    <div class="ps_right_card_package_lists-wrapper" id="light_card_lists">
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                MT5/MQL5 crash course.
+                                            </p>
+                                        </div>
+
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Python crash course.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Trade with updated tools the quants are using..
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Open/close trades in MT5 using Python.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Risk, indicators.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Auto-compounding 2.0.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Candlestick Recognition.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                High frequency trading.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Full library of MQL5 code.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Full access to our MT5 strategies.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Community of quants.
+                                            </p>
+                                        </div>
+                                        <div class="packge_list-item">
+                                            <div class="package_list_item-check">
+    
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                                    <path d="M5.04304 10.4708L1.846 7.27377L0.757324 8.35478L5.04304 12.6405L14.2432 3.44039L13.1621 2.35938L5.04304 10.4708Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <p class="package_list_item-text">
+                                                Lifetime membership.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="right_card_buy_btn-wrapper">
+                                    <a href="" class="ps_right_card_but_btn ps_right_card_but_btn-active">COMING SOON</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ps_right_card_bottom-text">
+                            No previous <br /> experience necessary
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const dark_card_btn = document.getElementById('dark_card_btn')
+        const light_svg = document.getElementById('light_svg')
+        const dark_card_lists = document.getElementById('dark_card_lists')
+
+        let dark_card_btn_counter= true
+
+        const light_card_btn = document.getElementById('light_card_btn')
+        const light = document.getElementById('light')
+        const light_card_lists = document.getElementById('light_card_lists')
+
+        let light_card_btn_counter= true
+
+
+
+        dark_card_btn.addEventListener('click',()=>{
+
+            if(dark_card_btn_counter){
+
+            console.log("dark btn");
+            dark_card_btn.style.background= "#2C3037"
+            light_svg.style.transform="rotate(180deg)"
+            dark_card_lists.style.display ="flex"
+            dark_card_lists.style.height ="auto"
+            
+            dark_card_btn_counter= false
+            
+        } else{
+            light_svg.style.transform="rotate(0deg)"
+            dark_card_btn.style.background= "none"
+            
+            dark_card_lists.style.display ="none"
+            dark_card_lists.style.height ="0"
+
+            dark_card_btn_counter= true
+            }
+        })
+
+        light_card_btn.addEventListener('click',()=>{
+
+            if(light_card_btn_counter){
+
+            console.log("light btn");
+            light_card_btn.style.background= "rgba(2, 7, 16, 0.25)"
+            light.style.transform="rotate(180deg)"
+            light_card_lists.style.display ="flex"
+            light_card_lists.style.height ="auto"
+            
+            light_card_btn_counter= false
+            
+        } else{
+            light.style.transform="rotate(0deg)"
+            light_card_btn.style.background= "none"
+            
+            light_card_lists.style.display ="none"
+            light_card_lists.style.display ="0"
+
+            light_card_btn_counter= true
+            }
+        })
+
+
+    </script>
+
+</body>
+
+</html>
